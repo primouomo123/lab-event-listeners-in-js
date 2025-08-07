@@ -3,24 +3,19 @@
 // Function to change the background color when a button is clicked
 function changeBackgroundColor() {
   // Implement the function to change background color
-  const button = document.getElementById("changeColorButton");
-  button.addEventListener("click", () => {
-    const r = Math.floor(Math.random() * 256);
-    const g = Math.floor(Math.random() * 256);
-    const b = Math.floor(Math.random() * 256);
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
 
-    const currentColor = `rgb(${r}, ${g}, ${b})`;
-    document.body.style.backgroundColor = currentColor;
-  });
+  const currentColor = `rgb(${r}, ${g}, ${b})`;
+  document.body.style.backgroundColor = currentColor;
+  
 }
 
 // Function to reset the background color when the body is double-clicked
 function resetBackgroundColor() {
   // Implement the function to reset background color
-  const button = document.getElementById("resetColorButton");
-  button.addEventListener("dblclick", () => {
-    document.body.style.backgroundColor = "";
-  });
+  document.body.style.backgroundColor = "";
 }
 
 // Capture Keyboard Input
